@@ -1,12 +1,12 @@
 #  Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
 # Пример: пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-def factorialList(n):
+def find_factorial(n):
     f = 1
     fact = []
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         f *= i
         fact.append(f)
     return fact
 
-print(factorialList(10))
+print(find_factorial(4))
